@@ -8,6 +8,26 @@ on:
   workflow_dispatch:
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.13.2
+        run: |
+          npm ci
+          npm run build --if-present
+        
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist        
+
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -23,8 +43,13 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           ssh-add - <<< "${{ secrets.PRIVATE_KEY }}"
           
+      - name: Retrieve build
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist
+          
       - name: Deploy to Linode
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          scp -o StrictHostKeyChecking=no -r ./src/* ${{ secrets.LINODE_USER }}@${{ secrets.LINODE_IP }}:${{ secrets.LINODE_DESTINATION }}
+        run: scp -o StrictHostKeyChecking=no -r ./dist/* ${{ secrets.LINODE_USER }}@${{ secrets.LINODE_IP }}:${{ secrets.LINODE_DESTINATION }}
