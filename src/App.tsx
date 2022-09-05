@@ -23,7 +23,7 @@ class App extends React.Component<{}, AppState> {
         <div className='d-flex flex-column h-100'>
           <Navigation app={this} />
 
-          <main className='flex-fill align-self-stretch border rounded p-2 my-2'>
+          <main className='flex-fill align-self-stretch border rounded my-2'>
             {this.state.currentContent.render()}
           </main>
         </div>
