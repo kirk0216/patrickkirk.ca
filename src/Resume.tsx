@@ -28,11 +28,7 @@ class ResumeSection extends React.Component<ResumeSectionProperties> {
 export class Resume extends React.Component {
     render() {
         return (
-            <Accordion alwaysOpen flush defaultActiveKey={['0', '1', '2', '3', '4']}>
-                <ResumeSection eventKey='4' title='Objective'>
-                I am a recent graduate of Algonquin College's Computer Programming program who is looking to get started in professional software development. My current career objective is to use my education, combined with my passion for learning and years of experience in a fast-paced, dynamic work environment, to meaningfully contribute to organizational goals while continuing my own professional development.
-                </ResumeSection>
-
+            <Accordion alwaysOpen flush defaultActiveKey={['0', '1', '2', '3']}>
                 <ResumeSection eventKey='0' title='Education'>
                     <Container>
                         <Row>

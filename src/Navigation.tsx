@@ -46,7 +46,7 @@ export class Navigation extends Component<NavigationProperties, NavigationState>
         this.state = {
             activeTabIndex: 0,
             tabs: [
-                { text: 'Home', component: new Welcome({}) },
+                { text: 'Welcome', component: new Welcome({}) },
                 { text: 'Resume', component: new Resume({}) },
                 { text: 'Portfolio', component: new Portfolio({}) },
                 { text: 'Contact', component: new Contact({}) }
