@@ -1,8 +1,6 @@
 import React from 'react';
 
-import envelope from 'bootstrap-icons/icons/envelope.svg';
-import linkedin from 'bootstrap-icons/icons/linkedin.svg';
-import github from 'bootstrap-icons/icons/github.svg';
+import { Envelope, Github, Linkedin } from 'react-bootstrap-icons';
 
 export class Contact extends React.Component {
     render() {
@@ -14,9 +12,9 @@ export class Contact extends React.Component {
                     <li className='text-muted'>Ontario, Canada</li>
                 </ul>
                 <ul className='list-group list-group-flush text-start'>
-                    <li className='list-group-item'><img src={envelope} alt='Email' /> <a href='mailto:pat.kirk@gmail.com'>pat.kirk@gmail.com</a></li>
-                    <li className='list-group-item'><img src={linkedin} alt='Linked In' /> <a href='https://www.linkedin.com/in/patrick-j-kirk/' target='_blank' rel='noreferrer'>patrick-j-kirk</a></li>
-                    <li className='list-group-item'><img src={github} alt='GitHub' /> <a href='https://github.com/kirk0216' target='_blank' rel='noreferrer'>kirk0216</a></li>
+                    <li className='list-group-item'><Envelope /> <a href='mailto:pat.kirk@gmail.com'>pat.kirk@gmail.com</a></li>
+                    <li className='list-group-item'><Linkedin /> <a href='https://www.linkedin.com/in/patrick-j-kirk/' target='_blank' rel='noreferrer'>patrick-j-kirk</a></li>
+                    <li className='list-group-item'><Github /> <a href='https://github.com/kirk0216' target='_blank' rel='noreferrer'>kirk0216</a></li>
                 </ul>
             </div>
         );
