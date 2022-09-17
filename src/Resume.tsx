@@ -43,6 +43,8 @@ export class Resume extends React.Component {
                                     <li>Software Development Life Cycle including Agile principles</li>
                                     <li>Database design and usage (SQL, DDL, DML)</li>
                                     <li>Experience with Java, Python, SQL, and web (HTML/CSS/JS)</li>
+                                    <li>Android development</li>
+                                    <li>Management and configuration of Windows and Linux operating systems</li>
                                 </ul>
                             </Col>
                         </Row>
