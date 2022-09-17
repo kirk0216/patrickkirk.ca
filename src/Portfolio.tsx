@@ -72,10 +72,14 @@ class Project extends Component<ProjectProperties> {
                         <Row>
                             <Col xs lg={10}>{project.title}</Col>
                             <Col xs className='d-flex me-3 justify-content-end'>
-                                <ProjectIcon destination={`https://github.com${project.github}`} icon={<Github size={imageSize} />} tooltip='Click to view the Github repository for this project in a new tab.' />
+                                <ProjectIcon destination={`https://github.com${project.github}`} 
+                                            icon={<Github size={imageSize} />} 
+                                            tooltip='Click to view the Github repository for this project in a new tab.' />
 
                                 { project.demo && 
-                                    <ProjectIcon destination={project.demo} icon={<PlayCircleFill size={imageSize} />} tooltip='Click to view a demo of the project in a new tab.' />
+                                    <ProjectIcon destination={project.demo} 
+                                                icon={<PlayCircleFill size={imageSize} />} 
+                                                tooltip='Click to view a demo of the project in a new tab.' />
                                 }
                             </Col>
                         </Row>
