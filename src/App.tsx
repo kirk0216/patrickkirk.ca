@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
 class App extends React.Component {
   render() {
     return (
-      <div className='container bg-white vh-100'>
+      <div className='container bg-white min-vh-100'>
         <div className='d-flex flex-column h-100'>
           <Navigation app={this} />
 
