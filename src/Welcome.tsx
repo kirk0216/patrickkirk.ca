@@ -12,7 +12,7 @@ export class Welcome extends React.Component {
                 </p>
 
                 <p>
-                    Thank you for taking the time to visit. If you have any questions, please feel free to contact me.
+                    Thank you for taking the time to visit. If you have any questions, please feel free to <a href='/contact'>contact me</a>.
                 </p>
             </div>
         )
