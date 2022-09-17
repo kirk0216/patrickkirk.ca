@@ -29,7 +29,7 @@ const projects: ProjectData[] = [
         title: 'Portfolio',
         description: <div>
             <p>My personal website which contains my resume and a portfolio of my academic and personal projects.</p>
-            <p>The site itself is written in TypeScript using React and related libraries. 
+            <p>The site is written in TypeScript using React and related libraries. 
                 It runs entirely on the client-side and has no back-end components.
                 Bootstrap (via React-Bootstrap) is used for styling and layout.</p>
         </div>,
@@ -49,7 +49,7 @@ const projects: ProjectData[] = [
             <ul>
                 <li>User authentication</li>
                 <li>Role based authorization</li>
-                <li>Server-side sessions using redis</li>
+                <li>Server-side sessions stored in redis</li>
                 <li>Administration panel</li>
             </ul>
         </div>,

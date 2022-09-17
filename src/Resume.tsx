@@ -55,10 +55,12 @@ export class Resume extends React.Component {
                     <ul>
                         <li>Object-oriented programming</li>
                         <li>Java</li>
+                        <li>Python</li>
                         <li>Database design</li> 
                         <li>SQL, DDL, DML</li>
                         <li>Microservices</li>
-                        <li>HTML/CSS/JavaScript</li>
+                        <li>JavaScript/TypeScript</li>
+                        <li>HTML/CSS</li>
                         <li>SDLC, Agile</li>
                         <li>Git</li>
                     </ul>
