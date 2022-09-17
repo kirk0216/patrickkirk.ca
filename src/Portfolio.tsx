@@ -1,4 +1,6 @@
 import './Portfolio.css';
+import blogScreenshot from './blog-ss.png';
+import portfolioScreenShot from './portfolio-ss.png';
 
 import { Component } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
@@ -36,7 +38,7 @@ const projects: ProjectData[] = [
         technologies: [
             'React', 'TypeScript', 'HTML', 'CSS'
         ],
-        screenshot: '/portfolio-ss.png'
+        screenshot: portfolioScreenShot
     },
     {
         title: 'Blog',
@@ -56,7 +58,7 @@ const projects: ProjectData[] = [
         technologies: [
             'Python', 'Flask', 'Jinja', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PostgreSQL'
         ],
-        screenshot: '/blog-ss.png'
+        screenshot: blogScreenshot
     }
 ]
 
@@ -118,7 +120,7 @@ class Project extends Component<ProjectProperties> {
                                     <div className='card w-100'>
                                         <h5 className='card-header text-center'>Screenshot</h5>
                                         <img src={project.screenshot}
-                                                    alt={'A screenshot demonstrating a live version of ' + project.title}></img>
+                                                    alt={'A thumbnail screenshot demonstrating a live version of ' + project.title}></img>
                                         <div className='card-footer d-grid p-0'>
                                             <button role='button' 
                                                     className='btn btn-primary rounded-top-0 stretched-link p-2' 
@@ -142,7 +144,8 @@ class Project extends Component<ProjectProperties> {
                                                 </div>
 
                                                 <div className='modal-content align-items-center'>
-                                                    <img src={project.screenshot} className='w-90 h-auto'></img>
+                                                    <img src={project.screenshot} className='w-90 h-auto' 
+                                                    alt={'A fullscreen screenshot demonstrating a live version of ' + project.title}></img>
                                                 </div>
                                             </div>
                                         </div>
