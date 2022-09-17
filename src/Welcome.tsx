@@ -7,7 +7,7 @@ export class Welcome extends React.Component {
         return (
             <div className='m-2'>
                 <p>
-                    My name is <strong>Patrick Kirk</strong>, and I am a recent graduate of <a href={programUrl} target='_blank'>
+                    My name is <strong>Patrick Kirk</strong>, and I am a recent graduate of <a href={programUrl} target='_blank' rel='noreferrer'>
                     Algonquin College's Computer Programming</a> program. My current goal is to combine my education, my passion for learning and 
                     years of experience in a fast-paced, dynamic work environment, to meaningfully contribute to the development of high quality software.
                 </p>
