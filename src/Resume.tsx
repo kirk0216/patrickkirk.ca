@@ -28,7 +28,7 @@ class ResumeSection extends React.Component<ResumeSectionProperties> {
 export class Resume extends React.Component {
     render() {
         return (
-            <Accordion alwaysOpen flush defaultActiveKey={['0', '1', '2', '3']}>
+            <Accordion alwaysOpen defaultActiveKey={['0', '1', '2', '3']}>
                 <ResumeSection eventKey='0' title='Education'>
                     <Container>
                         <Row>
