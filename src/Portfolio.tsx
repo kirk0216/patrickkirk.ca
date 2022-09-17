@@ -14,7 +14,7 @@ const imageSize: number = 20;
 
 interface ProjectData {
     title: string;
-    description: string;
+    description: string | JSX.Element;
     github: string;
     demo?: string;
     screenshot?: string;
@@ -25,7 +25,12 @@ interface ProjectData {
 const projects: ProjectData[] = [
     {
         title: 'Portfolio',
-        description: 'My personal website which contains my resume and a portfolio of my academic and personal projects. ',
+        description: <div>
+            <p>My personal website which contains my resume and a portfolio of my academic and personal projects.</p>
+            <p>The site itself is written in TypeScript using React and related libraries. 
+                It runs entirely on the client-side and has no back-end components.
+                Bootstrap (via React-Bootstrap) is used for styling and layout.</p>
+        </div>,
         github: 'kirk0216/patrickkirk.ca',
         demo: 'https://www.patrickkirk.ca',
         technologies: [
@@ -35,11 +40,21 @@ const projects: ProjectData[] = [
     },
     {
         title: 'Blog',
-        description: 'An example project consisting of a blog. Features include: ...',
+        description: <div>
+            <p>A blog written in Python that uses Flask and related libraries.</p>
+
+            Features include: 
+            <ul>
+                <li>User authentication</li>
+                <li>Role based authorization</li>
+                <li>Server-side sessions using redis</li>
+                <li>Administration panel</li>
+            </ul>
+        </div>,
         github: 'kirk0216/blog',
         demo: 'https://blog.patrickkirk.ca',
         technologies: [
-            'Python', 'Flask', 'Jinja', 'HTML', 'CSS', 'JavaScript', 'SQL'
+            'Python', 'Flask', 'Jinja', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PostgreSQL'
         ],
         screenshot: '/blog-ss.png'
     }
