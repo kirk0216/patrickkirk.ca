@@ -122,8 +122,7 @@ class Project extends Component<ProjectProperties> {
                                         <img src={project.screenshot}
                                                     alt={'A thumbnail screenshot demonstrating a live version of ' + project.title}></img>
                                         <div className='card-footer d-grid p-0'>
-                                            <button role='button' 
-                                                    className='btn btn-primary rounded-top-0 stretched-link p-2' 
+                                            <button className='btn btn-primary rounded-top-0 stretched-link p-2' 
                                                     data-bs-toggle='modal' 
                                                     data-bs-target={'#' + project.title + '-modal-screenshot'}>
                                                         View fullscreen
