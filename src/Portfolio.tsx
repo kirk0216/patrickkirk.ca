@@ -59,6 +59,30 @@ const projects: ProjectData[] = [
             'Python', 'Flask', 'Jinja', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PostgreSQL'
         ],
         screenshot: blogScreenshot
+    },
+    {
+        title: 'QuickHoard',
+        description: 'A personal budget web application made using Flask and Python written for a school project that required the use of a programming language not covered in a previous course.',
+        github: 'kirk0216/QuickHoard',
+        technologies: [ 'Python', 'Flask', 'HTML', 'CSS', 'SQL' ]
+    },
+    {
+        title: 'UserManagementService',
+        description: <div>
+            <p>Part of a school project where we wrote the API for a microblog using a microservice architecture.</p>
+            <p>Handles user registration and authentication.</p>
+        </div>,
+        github: 'kirk0216/UserManagementService',
+        technologies: [ 'Java', 'Spring', 'SQL' ]
+    },
+    {
+        title: 'MessageService',
+        description: <div>
+            <p>Part of a school project where we wrote the API for a microblog using a microservice architecture.</p>
+            <p>Handles CRUD for messages and message subscriptions.</p>
+        </div>,
+        github: 'kirk0216/MessageService',
+        technologies: [ 'Java', 'Spring', 'SQL' ]
     }
 ]
 
