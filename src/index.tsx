@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Contact } from './Contact';
 import { Portfolio } from './Portfolio';
 import { Resume } from './Resume';
 import { Welcome } from './Welcome';
@@ -23,7 +22,6 @@ root.render(
         <Route path='*' element={<App />}>
           <Route path='resume' element={<Resume />} />
           <Route path='portfolio' element={<Portfolio />} />
-          <Route path='contact' element={<Contact />} />
           <Route path='*' element={<Welcome />} />
         </Route>
       </Routes>

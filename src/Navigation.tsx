@@ -36,8 +36,7 @@ export class Navigation extends Component<NavigationProperties, NavigationState>
             tabs: [
                 { text: 'Welcome', url: '/' },
                 { text: 'Resume', url: '/resume' },
-                { text: 'Portfolio', url: '/portfolio' },
-                { text: 'Contact', url: '/contact' }
+                { text: 'Portfolio', url: '/portfolio' }
             ]
         }
     }
