@@ -34,7 +34,6 @@ const projects: ProjectData[] = [
                 Bootstrap (via React-Bootstrap) is used for styling and layout.</p>
         </div>,
         github: 'kirk0216/patrickkirk.ca',
-        demo: 'https://www.patrickkirk.ca',
         technologies: [
             'React', 'TypeScript', 'HTML', 'CSS'
         ],
@@ -54,7 +53,6 @@ const projects: ProjectData[] = [
             </ul>
         </div>,
         github: 'kirk0216/blog',
-        demo: 'https://blog.patrickkirk.ca',
         technologies: [
             'Python', 'Flask', 'Jinja', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PostgreSQL'
         ],
