@@ -8,7 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/esm/Tooltip';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 import { Github, PlayCircleFill } from 'react-bootstrap-icons';
 
@@ -118,7 +118,7 @@ class Project extends Component<ProjectProperties> {
                             <Col xs className='d-flex me-3 justify-content-end'>
                                 <ProjectIcon destination={`https://github.com/${project.github}`} 
                                             icon={<Github size={imageSize} />} 
-                                            tooltip='Click to view the Github repository for this project in a new tab.' />
+                                            tooltip='Github Repository' />
 
                                 { project.demo && 
                                     <ProjectIcon destination={project.demo} 
