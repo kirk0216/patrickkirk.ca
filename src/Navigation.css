@@ -1,0 +1,8 @@
+#navigation > :first-child {
+    margin-left: 0.5rem !important;
+}
+
+#navigation > :last-child {
+    margin-right: 0.5rem !important;
+}
+

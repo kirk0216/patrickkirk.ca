@@ -1,9 +1,9 @@
-import 'bootstrap/dist/js/bootstrap.js';
-
-import React, { Component } from 'react';
+import { Component } from 'react';
 import App from './App';
 
 import { NavLink } from 'react-router-dom';
+
+import './Navigation.css';
 
 interface NavigationItemProperties {
     text: string;
@@ -13,7 +13,7 @@ interface NavigationItemProperties {
 class NavigationItem extends Component<NavigationItemProperties> {
     render() {
         return (
-            <NavLink to={this.props.url} className='nav-link'>{this.props.text}</NavLink>
+            <NavLink to={this.props.url} className='nav-link mx-1'>{this.props.text}</NavLink>
         )
     };
 }
@@ -43,7 +43,7 @@ export class Navigation extends Component<NavigationProperties, NavigationState>
 
     render() {
         return (
-            <nav className='nav nav-fill nav-pills pt-2'>
+            <nav id='navigation' className='nav nav-fill nav-pills py-0'>
             { 
                 this.state.tabs.map((tab, i) => { 
                     return <NavigationItem key={i} text={tab.text} url={tab.url} />
