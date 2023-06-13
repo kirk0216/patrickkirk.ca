@@ -1,6 +1,5 @@
 import './Portfolio.css';
 import blogScreenshot from './blog-ss.png';
-import portfolioScreenShot from './portfolio-ss.png';
 
 import { Component } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
@@ -36,8 +35,7 @@ const projects: ProjectData[] = [
         github: 'kirk0216/patrickkirk.ca',
         technologies: [
             'React', 'TypeScript', 'HTML', 'CSS'
-        ],
-        screenshot: portfolioScreenShot
+        ]
     },
     {
         title: 'Blog',
