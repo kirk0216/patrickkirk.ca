@@ -191,7 +191,7 @@ class Project extends Component<ProjectProperties> {
 export class Portfolio extends Component {
     render() {
         return (
-            <Accordion alwaysOpen defaultActiveKey={['0']}>
+            <Accordion alwaysOpen flush defaultActiveKey={['0']}>
                 {
                     projects.map((project, index) => {
                         return <Project key={project.title} eventKey={index.toString()} project={project} />

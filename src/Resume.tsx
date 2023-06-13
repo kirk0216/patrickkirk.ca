@@ -28,7 +28,7 @@ class ResumeSection extends React.Component<ResumeSectionProperties> {
 export class Resume extends React.Component {
     render() {
         return (
-            <Accordion alwaysOpen defaultActiveKey={['0', '1', '2', '3']}>
+            <Accordion alwaysOpen flush defaultActiveKey={['0', '1', '2', '3']}>
                 <ResumeSection eventKey='0' title='Education'>
                     <Container>
                         <Row>
@@ -38,13 +38,13 @@ export class Resume extends React.Component {
                         <Row className='mt-2'>
                             <Col>
                                 <ul>                                    
-                                    <li>Graduated with Honours with a GPA of 3.96</li>
                                     <li>Object-oriented fundamentals, including SOLID principles and design patterns</li>
                                     <li>Software Development Life Cycle including Agile principles</li>
                                     <li>Database design and usage (SQL, DDL, DML)</li>
                                     <li>Experience with Java, Python, SQL, and web (HTML/CSS/JS)</li>
                                     <li>Android development</li>
                                     <li>Management and configuration of Windows and Linux operating systems</li>
+                                    <li>Graduated with Honours with a GPA of 3.96</li>
                                 </ul>
                             </Col>
                         </Row>
