@@ -43,7 +43,7 @@ export class Navigation extends Component<NavigationProperties, NavigationState>
 
     render() {
         return (
-            <nav id='navigation' className='nav nav-fill nav-pills py-2 bg-light'>
+            <nav id='navigation' className='nav nav-fill nav-pills py-2 mb-2 bg-light'>
             { 
                 this.state.tabs.map((tab, i) => { 
                     return <NavigationItem key={i} text={tab.text} url={tab.url} />
