@@ -11,6 +11,8 @@ import Tooltip from 'react-bootstrap/Tooltip';
 
 import { Github, PlayCircleFill } from 'react-bootstrap-icons';
 
+import 'bootstrap/dist/js/bootstrap';
+
 const imageSize: number = 20;
 
 interface ProjectData {
